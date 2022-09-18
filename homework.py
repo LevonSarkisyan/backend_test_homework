@@ -23,7 +23,6 @@ class InfoMessage:
 
 class Training:
     """Базовый класс тренировки."""
-
     MIN: int = 60
     M_IN_KM: int = 1000
     LEN_STEP: float = 0.65
@@ -65,7 +64,6 @@ class Running(Training):
 
     def get_spent_calories(self) -> float:
         """Получить количество затраченных калорий."""
-
         spent_calories = ((self.RUN_COEFF_CALORIE_1 * self.get_mean_speed()
                            - self.RUN_COEFF_CALORIE_2)
                           * self.weight / self.M_IN_KM
