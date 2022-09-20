@@ -4,7 +4,7 @@ from typing import List, Dict, Type
 
 @dataclass
 class InfoMessage:
-    """Информационное сообщение о тренировке."""
+    """Информационное сообщение о тренировках."""
     MESSAGE = ('Тип тренировки: {training_type}; '
                'Длительность: {duration:.3f} ч.; '
                'Дистанция: {distance:.3f} км; '
